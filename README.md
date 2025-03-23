@@ -914,3 +914,115 @@ Here 5 builds execute parallel ,I kept executor is 5 this is same machine
 Build Periodically:::	H/15 * * * *   ----this build happened every 5 minutes without commits ,if changes are commit or not but every 5 mints build happened in Jenkins 
 
 
+
+21/03/2025::
+============
+
+
+Create Sample Build peridiocally jenkins job::
+=============================================
+
+Description
+
+![image](https://github.com/user-attachments/assets/5ad69478-039e-4ef7-a35f-cb18ed8364f1)
+
+Git url::
+
+![image](https://github.com/user-attachments/assets/b2cbdb7c-14ac-4fae-a240-90cc7a82c78d)
+
+Build the branch
+
+![image](https://github.com/user-attachments/assets/94230c57-b88f-4ab1-b894-151f30fa6d53)
+
+every 5 mints build will trigger
+
+Build Periodically:::	H/15 * * * *   ----this build happened every 5 minutes without commits ,if changes are commit or not but every 5 mints build happened in Jenkins 
+![image](https://github.com/user-attachments/assets/a5321109-944b-4e79-9294-e28c2adfea0d)
+
+click save 
+
+Whenever you configure a build activities :::
+=======================================
+
+SCM::
+
+	Where is your project
+
+Build environment::
+
+---all about your workspace folders 
+
+Build Triggers::
+
+--whenever code changes 
+--periodic
+---script calls 
+
+Build steps::
+
+Dev team will tell ,
+
+Post build::
+
+That aim is giving continue feedback to dev team
+
+--send mails
+--build pass/fail
+--CI
+
+Manage Jenkins::
+=================
+
+1.configure system
+
+--number of executors
+--E-mail notifications
+--internall org SMTP
+
+We don’t change anything in system level configurations
+
+Configure Global security::
+=========================
+
+--matrix security
+---jenkins level security
+
+Configure credentials::
+===============
+
+Above options we can’t do anything in your organization
+
+
+Global tool configuration:
+================
+
+Java::
+
+![image](https://github.com/user-attachments/assets/64a43077-1689-4802-9fab-d316634d426d)
+
+ 
+
+Maven::
+
+![image](https://github.com/user-attachments/assets/74bac0fa-9552-4289-b1db-79f729b9de75)
+
+ 
+Plugins::
+===
+
+Manage jenkins --->plugins
+
+
+Availabe plugins 
+Installed plugins
+
+![image](https://github.com/user-attachments/assets/b1f32f0a-68e2-4bc1-b521-7f67f9bd9956)
+
+
+if you want installe new plugin ::
+
+Go to Availabe plugins and erach plugins name
+
+![image](https://github.com/user-attachments/assets/5e17685a-430d-437a-99b3-a29370b374cc)
+
+Once insatlled the plugin we will get the UI(User Interface) and it will not installed any software just get the UI
