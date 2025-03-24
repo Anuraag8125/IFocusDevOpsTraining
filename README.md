@@ -1026,3 +1026,77 @@ Go to Availabe plugins and erach plugins name
 ![image](https://github.com/user-attachments/assets/5e17685a-430d-437a-99b3-a29370b374cc)
 
 Once insatlled the plugin we will get the UI(User Interface) and it will not installed any software just get the UI
+
+
+24/03/2025::
+==============
+
+
+Parameterized Jenkins Jobs ::
+
+In Jenkins, parameterized jobs allow you to customize job executions by passing different values or parameters. This can be useful for various reasons, such as running tests for different environments, branches, or using different configurations, all within the same job.
+
+Run the same job with different inputs without modifying the configuration manually
+
+Go To New Item
+
+![image](https://github.com/user-attachments/assets/20b1237b-1681-4e77-ad8b-33ee8ac69b97)
+
+Enter Job Name, Free style project and click ok
+
+![image](https://github.com/user-attachments/assets/106bb57e-5466-4e1d-9ead-c977aaac60e7)
+
+
+Enter the description
+
+![image](https://github.com/user-attachments/assets/4944c35f-86db-42a4-8bb8-4b3d9987fd81)
+
+Select the option This project is parameterised
+
+![image](https://github.com/user-attachments/assets/4eeab439-3e45-4320-a7de-73360c28c3c3)
+
+Click Add Parameter
+
+![image](https://github.com/user-attachments/assets/3570dcc9-72a0-4034-8da3-1a70e0341fa7)
+
+Select optiions String parameter or choise parameter or boolean parameter you can select the ny options based on your requirement 
+
+![image](https://github.com/user-attachments/assets/210ae086-fecf-42b2-9322-966b85431d18)
+
+select string parameter
+
+![image](https://github.com/user-attachments/assets/aa0b6706-bda8-4de8-a094-d14e4955fc34)
+
+Select Choise Parameter
+
+![image](https://github.com/user-attachments/assets/48baed03-fe9c-482b-870b-ba4126eb2b4a)
+
+choise parameter
+
+![image](https://github.com/user-attachments/assets/a50a06a9-5063-4f12-8d10-0f44ee473f46)
+
+Click Save
+
+You Can observed this project is parameterized 
+
+![image](https://github.com/user-attachments/assets/05be584b-bd82-4f00-89c7-6358a4ca5ca4)
+
+Click Build with parameter
+
+![image](https://github.com/user-attachments/assets/a7317486-0b18-4e78-9a64-4113f712a757)
+
+select deployment environment
+
+![image](https://github.com/user-attachments/assets/b12a618f-a8da-4c8f-b19c-7b92af2431da)
+
+select which versioj you want to deployment like tis you can configured real time parameterized project in jenkins
+
+![image](https://github.com/user-attachments/assets/33a52ced-4fa7-4b69-a0f9-a82fe436cdfd)
+
+Click Build
+
+![image](https://github.com/user-attachments/assets/7acf8c06-b734-4512-acf7-86ed9fd9053a)
+
+![image](https://github.com/user-attachments/assets/1cec807a-76cc-4446-a589-4767563b90eb)
+
+
