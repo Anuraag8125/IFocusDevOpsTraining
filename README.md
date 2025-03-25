@@ -1100,3 +1100,118 @@ Click Build
 ![image](https://github.com/user-attachments/assets/1cec807a-76cc-4446-a589-4767563b90eb)
 
 
+
+
+
+25/03/2025::
+===============
+
+Building 3 Projects::
+
+<img width="846" alt="3 projects" src="https://github.com/user-attachments/assets/003ccaef-42c0-4593-9310-35e543a7e0b8" />
+
+
+![image](https://github.com/user-attachments/assets/a3c32e99-2361-4462-a7bc-dfa05310191d)
+
+
+Project-A,Projec -B,Projec - C 
+
+Projec A is  (Downstream project is ---Projec B)
+
+Projec B is (UP Stream project for ----Projec A)
+
+Projec C is (downstream project --Projec B)
+
+i created 3 free style project in jenkins 
+
+Project-A ::
+==============
+
+Github URL::: https://github.com/parasa7358/spring-petclinic.git
+
+![image](https://github.com/user-attachments/assets/e8073061-b815-4945-bd7f-c20b3a6576e2)
+
+Post Build Action , select the option Build Other Project  Project-B
+
+![image](https://github.com/user-attachments/assets/ef75f777-c273-4255-b063-f9853072dfcb)
+
+Project -B ::
+=============
+
+Github URL:::https://github.com/parasa7358/onlinebookstore.git
+
+![image](https://github.com/user-attachments/assets/2ee62e92-e677-4717-93be-77d6dd1ecbf9)
+
+Post Build Action , select the option Build Other Project Project-C
+
+![image](https://github.com/user-attachments/assets/ec7cfc18-002b-4dc3-8438-a75b12b9a438)
+
+
+Project-C::
+============
+
+
+Github URL:::https://github.com/parasa7358/game-of-life.git
+
+Discard old builds:::
+====================
+
+Days to keep builds---->give 15
+Max # of builds to keep ==give 10
+
+![image](https://github.com/user-attachments/assets/58a96f10-ff53-4306-a5a7-dd20b42e1c9f)
+
+
+In project -A ,please enabled POLL SCM -----> * * * * *  
+
+Every minute jenkins server verify is any new commits happend in github repository or not
+
+NOTE:: please make few changes in Project-A then push those changes to github repository ,Now project-A Automatic Buiod will trigger 
+Once Project-A build Success,then will start Project-B build automatically, Once Project-B success,then Project-C build will start Automatic
+Without manual intervension all 3 Projects Build will triggered.
+
+Published Artifacts & Test Results::
+=============================
+
+![image](https://github.com/user-attachments/assets/23f6cd8e-1aac-4597-9900-a4c759ad4b8a)
+
+Post build Action i want to published artifacts & test results
+
+![image](https://github.com/user-attachments/assets/fcd3ea28-a352-431f-8e1b-86758787fe7a)
+
+I'm going to created one free style job and configured Post-build Actions
+
+In post build Action select the option Archive the artifacts
+
+>target/*.war  OR target/*.jar  OR target/*.zip  OR target/*.ear
+
+![image](https://github.com/user-attachments/assets/39dcf26d-74ee-4c7f-bc28-bb7f6116fedb)
+
+In post build Action select the option Publish JUnit test result report for to published the test results
+
+>target/surefire-reports/*.xml
+
+
+![image](https://github.com/user-attachments/assets/e04f371d-b684-406b-9210-50fb74b6ea79)
+
+I want to show test results ::
+=================================
+
+
+>ls target 
+
+Post build action stage
+
+Select archive the artifact
+--target/*.jar
+
+Junit test results::
+--target/surefire-reports/*.xml
+
+See test results & antifactory ::
+===================================
+
+![image](https://github.com/user-attachments/assets/2711b453-072e-40d2-9596-afce8f586310)
+
+
+3.For every company will do sequence build on one project this is recommended approach
